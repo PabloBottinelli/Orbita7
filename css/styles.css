@@ -1,0 +1,558 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+/* HEADER */
+.nav-pc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color:white;
+}
+
+.nav-pc a{
+    text-decoration: none;
+    color: #001E64;
+    font-size: 1.2em;
+    font-weight: 400;
+    transition: all 500ms ease;
+}
+
+.nav-pc a:hover{
+    transform: scale(1.2);
+    color: #FF6633;
+    text-decoration: none;
+}
+
+.logo{
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+
+#header-mb{
+    display: none;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+@media (max-width: 990px) {
+    .nav-pc {
+        display: none;
+    } 
+    #header-mb{
+        display: flex;
+    }
+}
+
+.headerBoots img {
+    width: 200px;
+    padding: 10px; 
+}
+  
+.nav-link {
+    color: #001E64;
+    margin-top: 10px;
+    padding: 0;
+    width: 150px;
+    transition: all 500ms ease; 
+}
+  
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #FF6633; 
+}
+  
+.fa-bars {
+    color: black; 
+}
+
+@media (max-width: 530px){
+    .headerBoots img {
+        width: 100px;
+    }
+    .nav-link{
+        font-size: 0.8em;
+    }
+}
+
+/* BANNER */
+.banner {
+    padding-top: 93px;
+    position: relative; 
+}
+
+.banner .tittle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; 
+}
+
+.banner div h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 600; 
+}
+
+@media (max-width: 1100px){
+    .banner div h1{
+        font-size: 2em;
+    }
+}
+@media (max-width: 760px){
+    .banner div h1{
+        font-size: 1.5em;
+    }
+    .banner .tittle{
+        top: 50%
+    }
+}
+@media (max-width: 530px){
+    .banner div h1{
+        font-size: 1em;
+    }
+    .banner{
+        padding-top: 68px;
+    }
+}
+  
+/* SERVICIOS */
+.seccion-servicios{
+    margin: auto;
+    width: 60%;
+    position: relative;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 2.5em;
+    color: #FF6633;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.cont-vid{
+    width: 40%;
+    text-align: center;
+}
+
+video{
+    width: 100%;
+    border-radius:20px;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.246);
+}
+
+.cont-txt{
+    margin: auto;
+    width: 50%;
+    color: #343434;
+}
+
+.b{
+    color: #001E64;
+}
+
+.o{
+    color: #FF6633;
+}
+
+.cont-txt h2{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.cont-txt h2 i{
+    padding-right: 15px;
+}
+
+.cont-txt p{
+    font-size: 1.2em;
+}
+
+@media (max-width: 1250px){
+    .seccion-servicios{
+        width: 90%;
+    }
+}
+@media (max-width: 750px){
+    .titulo{
+        font-size: 2em;
+    }
+    .servicio{
+        display: block;
+    }
+    .cont-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .cont-txt h2{
+        font-size: 1.5em;
+    }
+    .cont-vid{
+        width: 100%;
+        padding-top: 20px;
+    }
+    video{
+        width: 70%;
+    }
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid rgb(187, 187, 187);
+    padding: 30px;
+}
+
+.footer-content{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.footer-content .a-footer{
+    display: block;
+    text-decoration: none;
+    color: #001E64;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.footer-content .a-footer:hover{
+    color: #2659d2;
+}
+
+.footer-content .a-footer i{
+    padding-right: 10px;
+}
+
+.copy{
+    font-size: 1.2em;
+}
+
+.logo-f img{
+    width: 270px;
+}
+
+@media (max-width: 700px){
+    .footer-content .a-footer{
+        font-size: 1em;
+    }
+    .copy{
+        font-size: 1em;
+    }
+    .logo-f img{
+        width: 200px;
+    }
+}
+
+/* CONTACTO */
+.contacto{
+    background-color: rgb(238, 237, 237);
+    padding-bottom: 50px;
+}
+
+.contacto h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}  
+    
+.contacto__form{
+    margin: auto;
+    margin-top: 50px;
+    width: 40%;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input[type="text"],input[type="email"], textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0000008e;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+textarea{
+    height: 100px;
+}   
+ 
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn-contacto{
+    background: #1047c7;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 500ms ease;
+    font-weight: 400;
+}
+    
+.btn-contacto:hover{
+    transform: scale(1.1);
+}
+.btn-contacto:focus{
+    box-shadow: none;
+}    
+
+@media (max-width: 1300px){
+    .contacto__form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px){
+    .contacto h2{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px){
+    .contacto__form{
+        width: 90%;
+    }
+}
+
+/* COMO TRABAJAMOS */
+.trabajo{
+    background-color: rgb(238, 237, 237);
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.trabajo div{
+    margin: auto;
+    width: 50%;
+}
+
+.spans span{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    display:block;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    color: #343434;
+}
+
+.spans span i{
+    float: right;
+    color: #012985;
+    font-size: 1.5em;
+}
+
+.none{
+    transform: translate(-1000%);
+}
+
+.k{
+    color: rgb(244, 121, 13);
+    border-bottom: 1px solid rgb(244, 121, 13);
+    padding-bottom: 5px;
+}
+    
+@media (max-width: 1250px){
+    .trabajo div{
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px){
+    .trabajo div{
+        width: 80%;
+    }
+    .spans span{
+        font-size: 1em;
+        border: 1px solid black;
+    }
+    .k{
+        font-size: 1.3em;
+    }
+    .spans span i{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 600px){
+    .trabajo div{
+        width: 95%;
+    }
+}
+
+/* NOSOTROS */
+.nosotros{
+    position: relative;
+    width: 100%;
+}
+
+.nosotros > img{
+    filter: brightness(0.65);
+}
+
+.orbita{
+    width: 100%;
+}
+
+.contenido{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; 
+}
+
+.texto p{
+    color: white;
+}
+
+.texto{
+    width: 60%;
+    margin: auto;
+}
+
+.nosotros div p{
+    font-size: 1.5em;
+}
+
+.resaltar{
+    font-style: italic;
+    font-size: 1.8em;
+    color: white;
+}
+
+.orbita-mob{
+    display: none;
+}
+
+.orbita-mob-s{
+    display: none;
+}
+
+@media (max-width: 1300px){
+    .nosotros div p{
+        font-size: 1.2em;
+    }
+    .resaltar{
+        font-size: 1.4em;
+    }
+    .tit-nosotros{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 980px){
+  
+    .texto{
+        width: 90%;
+    }
+    .titulo{
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 800px){
+    .orbita{
+        display: none;
+    }
+    .orbita-mob{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px){
+    .texto{
+        width: 95%;
+    }
+    .nosotros div p{
+        font-size: 1em;
+    }
+    .resaltar{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 500px){
+    .orbita-mob{
+        display: none;
+    }
+    .orbita-mob-s{
+        display: block;
+    }
+}
+
+/* WHATSAPP */
+.btn-whatsapp{
+    display:block;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+.btn-whatsapp img{
+    width: 90px;
+    height: 90px;
+}
+
+/* HOOKS */
+#servicios{
+    position: absolute;
+    bottom: 70px;
+}
+
+#formas{
+    position: absolute;
+    bottom: 50px;
+}
+
+#nosotros{
+    position: absolute;
+    bottom: 50px;
+}
+
+#contacto{
+    position: absolute;
+    bottom: 80px;
+}
+
+
